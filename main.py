@@ -56,7 +56,7 @@ def main():
                 if d <= bullet.radius + asteroid.radius:
                     print("HIT", d, bullet.radius + asteroid.radius)
                     bullet.kill()
-                    asteroid.kill()
+                    asteroid.split()
                     break  # stop checking more bullets for this asteroid
 
         for drawing in drawable:
